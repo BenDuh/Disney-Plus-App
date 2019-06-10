@@ -18,8 +18,10 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
     "react-scroll-horizontal": "^1.6.2",
+    "react-slick": "^0.24.0",
     "redux": "^4.0.1",
-    "redux-saga": "^1.0.2"
+    "redux-saga": "^1.0.2",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -2,11 +2,9 @@ import React,{Component} from 'react'
 import CardMovie from './CardMovie';
 import ScrollMenu from 'react-horizontal-scrolling-menu'
 import { Row, Carousel } from 'antd';
+import Slider from "react-slick"
 
 export default class Suggest extends Component {
-    state = {
-        selected: 0
-      };
       onSelect = key => {
         this.setState({ selected: key });
       }
@@ -16,21 +14,21 @@ export default class Suggest extends Component {
         i++;
         return(
             <div>
-                {i <= 5 &&
+                {i <= 8 &&
                     <CardMovie key={movie.id} id={movie.id} image={movie.poster} cover={true} gotoMovie={this.props.gotoMovie}/>
                 }
             </div>
         )    
         })
-        const { selected } = this.state;
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 5,
+            slidesToScroll: 5
+          }
         return (
-            // <ScrollMenu
-            //   data={orderMovies}
-            //   selected={selected}
-            //   onSelect={this.onSelect}
-            //   wheel={false}
-            // />
-            <Row className="scrollbar-wrapper">{orderMovies}</Row>
+            <Slider {...settings}>{orderMovies}</Slider>
         )
     }
 }

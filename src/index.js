@@ -8,6 +8,8 @@ import App from './App'
 import MovieFocus from './components/MovieFocus';
 import ListCompany from './components/ListCompany';
 import Header from './components/Header';
+import "../node_modules/slick-carousel/slick/slick.css"; 
+import "../node_modules/slick-carousel/slick/slick-theme.css";
 
 
 const Root = () =>{
