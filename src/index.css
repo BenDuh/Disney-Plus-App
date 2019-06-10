@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.App-logo{
+  height: 100px;
+  padding: 8px 20px;
+}
+.App{
+  background-color: #00438F;
+  min-height: 100vh;
+}
+.icon-app{
+  color: white;
+  font-size: 40px;
+}
+.ant-row{
+  align-items: center;
+  display: flex;
+}
+
+.padding-land{
+  padding: 15px 30px;
+}
+.cover-image img{
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: top;
+  height: 600px
+}
+
+.card-companie{
+  border-radius: 15px;
+  background-color: rgba(0, 37, 79, 0.651);
+  height:200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0 10px;
+  cursor: pointer;
+}
+
+.card-companie:hover{
+  background-color: rgba(0, 37, 79, 0.973);
+}
+
+.card-companie img{
+  width: 75%
+}
+.card-movie img{
+  width: 100%;
+  position: relative;
+}
+.scrollbar-wrapper{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.card-movie{
+  margin:0 10px;
+  cursor: pointer;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-movie:hover{
+  background-color: black;
+}
+.card-movie:hover .icon-movie{
+  display: inline;
+}
+.card-movie img:hover{
+  opacity: 0.4;
+}
+h2{
+  color: white;
+  margin:0 0 20px 10px;
+  font-size: 35px;
+}
+.icon-movie{
+  display: none;
+  font-size: 50px;
+  color:white;
+  position: absolute; 
+}
+.description{
+  margin: 50px;
+  padding: 50px 150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: rgba(0, 37, 79, 0.973);
+}
+.img-movie{
+  text-align: right;
+}
+.descrip-movie{
+  padding: 0 80px;
+}
+.descrip-movie h2{
+  margin: 0 0 5px 0;
+  font-size: 30px
+}
+.descrip-movie span{
+  margin: 0 0 10px 0;
+  display: inline-block;
+  color: white;
+  font-size: italic;
+  font-weight: 150
+}
+.descrip-movie p{
+  color: white;
+  font-weight: 400;
+  font-size: 17px
+}
