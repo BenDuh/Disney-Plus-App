@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
-import CardMovie from './CardMovie';
-import { Row, Carousel } from 'antd';
+import CardMovie from './CardMovie'
+import { Row, Carousel } from 'antd'
+import Slider from "react-slick"
 
 export default class News extends Component {   
       setSelected = ev => {
@@ -9,13 +10,23 @@ export default class News extends Component {
       };
     
     render() {
+        const settings = {
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 5,
+          slidesToScroll: 5
+        }
         const orderMovies = this.props.movies.map(movie =>{
             return(
                 <CardMovie key={movie.id} id={movie.id} image={movie.poster} cover={false} gotoMovie={this.props.gotoMovie}/>
             )    
         })
         return (
-          <Row className="scrollbar-wrapper">{orderMovies}</Row>
+          <div>
+            <Slider {...settings}>{orderMovies}</Slider>
+          </div>
+          
         )
     }
 }

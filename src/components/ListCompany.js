@@ -21,9 +21,7 @@ class ListCompany extends Component {
         const ListCompany =  this.props.company.map(movie =>{
             return(
               <div>
-
-                        <CardMovie id={movie.id} image={movie.poster} gotoMovie={this.gotoMovie}/>
-
+                <CardMovie id={movie.id} image={movie.poster} gotoMovie={this.gotoMovie}/>
               </div>
           )})
         return (
